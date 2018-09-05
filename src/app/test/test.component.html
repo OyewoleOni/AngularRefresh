@@ -1,0 +1,16 @@
+
+  <h1 [style.color]="hasError ? 'red' : 'green'">test works!</h1>
+  <h1 [style.color]="highLightColor">test works!</h1>
+  <h1 [ngStyle]="titleStyles">test works!</h1>
+  <input [id]="myId" type="text" value="oni"/>
+  <input [disabled]="isDisabled" id="{{myId}}" type="text" value="oni"/>
+  <h1 [class]="successClass">test works!</h1>
+  <h1 [class.text-danger]="hasError">test works!</h1>
+  <h1 [ngClass]="messageClasses">test works!</h1>
+  <button (click)="onClick($event)">Greet</button>
+  <button (click)="greeting='Welcome oni'">Greet</button>
+  <input [(ngModel)]="name1" type="text">
+  {{name1}}
+  {{greeting}}
+  <p>Inline test!</p>
+
